@@ -11,7 +11,7 @@
         <!--Home View Controller-->
         <scene sceneID="YSn-NL-3L9">
             <objects>
-                <viewController id="o5n-Sh-QS8" customClass="HomeViewController" customModule="YouTubeSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="o5n-Sh-QS8" customClass="HomeViewController" customModule="HappyTherapist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="een-GT-J0s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,6 +43,20 @@
                                     <action selector="緊急事態発生中:" destination="o5n-Sh-QS8" eventType="touchUpInside" id="Zez-Ee-38x"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Happy Therapist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mop-UJ-kPZ">
+                                <rect key="frame" x="47" y="385" width="320" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STATUS : Undetected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbu-s7-AcK">
+                                <rect key="frame" x="47" y="465" width="320" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L2T-Np-nNI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -58,6 +72,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3Nz-Hp-eDp"/>
+                    <connections>
+                        <outlet property="MessageLabel" destination="Mop-UJ-kPZ" id="Xy7-HG-0aj"/>
+                        <outlet property="StatusLabel" destination="lbu-s7-AcK" id="giM-ge-c0I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRt-jk-f8a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,7 +84,7 @@
         <!--Youtube List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="YoutubeListViewController" customModule="YouTubeSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="YoutubeListViewController" customModule="HappyTherapist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +105,7 @@
                                 <rect key="frame" x="8" y="146" width="398" height="659"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="197" id="mwn-OV-OvB" customClass="YouTubeSearchListTableViewCell" customModule="YouTubeSample" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="197" id="mwn-OV-OvB" customClass="YouTubeSearchListTableViewCell" customModule="HappyTherapist" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="398" height="197"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mwn-OV-OvB" id="Ard-Nw-Imf">
@@ -154,7 +172,7 @@
         <!--Youtube Player View Controller-->
         <scene sceneID="YJZ-Ly-gQg">
             <objects>
-                <viewController storyboardIdentifier="YoutubePlayerViewController" id="l74-Wn-yYM" customClass="YoutubePlayerViewController" customModule="YouTubeSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YoutubePlayerViewController" id="l74-Wn-yYM" customClass="YoutubePlayerViewController" customModule="HappyTherapist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N56-jA-Rp7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,7 +256,7 @@
         <!--Youtube My List View Controller-->
         <scene sceneID="xsK-hQ-j7D">
             <objects>
-                <viewController id="W9u-dy-yg8" customClass="YoutubeMyListViewController" customModule="YouTubeSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="W9u-dy-yg8" customClass="YoutubeMyListViewController" customModule="HappyTherapist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qag-E7-KaW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,7 +265,7 @@
                                 <rect key="frame" x="8" y="96" width="398" height="709"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="197" id="knV-Td-9xZ" customClass="YouTubeSearchListTableViewCell" customModule="YouTubeSample" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="197" id="knV-Td-9xZ" customClass="YouTubeSearchListTableViewCell" customModule="HappyTherapist" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="398" height="197"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="knV-Td-9xZ" id="pVd-xY-qHj">
@@ -325,6 +343,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="76q-VZ-bof" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qiH-MC-zrx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -407,7 +426,7 @@
         <!--Youtube Window View Controller-->
         <scene sceneID="yrh-ZC-W3j">
             <objects>
-                <viewController storyboardIdentifier="YoutubeWindowViewController" id="Vdq-0O-OVq" customClass="YoutubeWindowViewController" customModule="YouTubeSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YoutubeWindowViewController" id="Vdq-0O-OVq" customClass="YoutubeWindowViewController" customModule="HappyTherapist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QWg-KR-caj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -433,6 +452,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="2kd-rt-Kkt"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AVI-12-t42" firstAttribute="height" secondItem="wQ9-re-rux" secondAttribute="height" multiplier="0.15" id="5qv-Q7-x0w"/>

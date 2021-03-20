@@ -20,6 +20,19 @@
 		7FBE84EB2605AD5B00D54E92 /* HappyTherapistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE84EA2605AD5B00D54E92 /* HappyTherapistUITests.swift */; };
 		7FBE84FC2605AD8700D54E92 /* YoutubeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE84FB2605AD8700D54E92 /* YoutubeListViewController.swift */; };
 		7FBE85012605E74200D54E92 /* YoutubePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE85002605E74200D54E92 /* YoutubePlayerViewController.swift */; };
+		7FDA2D592606690700E8E0D5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDA2D572606690700E8E0D5 /* Interface.storyboard */; };
+		7FDA2D5B2606690A00E8E0D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FDA2D5A2606690A00E8E0D5 /* Assets.xcassets */; };
+		7FDA2D622606690B00E8E0D5 /* HappyTherapistWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7FDA2D612606690B00E8E0D5 /* HappyTherapistWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7FDA2D672606690B00E8E0D5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA2D662606690B00E8E0D5 /* InterfaceController.swift */; };
+		7FDA2D692606690B00E8E0D5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA2D682606690B00E8E0D5 /* ExtensionDelegate.swift */; };
+		7FDA2D6B2606690B00E8E0D5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA2D6A2606690B00E8E0D5 /* NotificationController.swift */; };
+		7FDA2D6D2606690B00E8E0D5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA2D6C2606690B00E8E0D5 /* ComplicationController.swift */; };
+		7FDA2D6F2606690C00E8E0D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FDA2D6E2606690C00E8E0D5 /* Assets.xcassets */; };
+		7FDA2D742606690C00E8E0D5 /* HappyTherapistWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7FDA2D552606690700E8E0D5 /* HappyTherapistWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7FDA2D832606693A00E8E0D5 /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA2D822606693A00E8E0D5 /* WatchConnector.swift */; };
+		7FDA2D8B26066A7700E8E0D5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDA2D8A26066A7700E8E0D5 /* HealthKit.framework */; };
+		7FDA2D9326066B2300E8E0D5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDA2D9226066B2300E8E0D5 /* HealthKit.framework */; };
+		7FDA2D9A26066B7100E8E0D5 /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA2D9926066B7100E8E0D5 /* PhoneConnector.swift */; };
 		7FE79999260600E40036A32C /* HappyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE79998260600E40036A32C /* HappyState.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +51,46 @@
 			remoteGlobalIDString = 7FBE84C42605AD5A00D54E92;
 			remoteInfo = YouTubeSample;
 		};
+		7FDA2D632606690B00E8E0D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FBE84BD2605AD5A00D54E92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FDA2D602606690B00E8E0D5;
+			remoteInfo = "HappyTherapistWatch Extension";
+		};
+		7FDA2D722606690C00E8E0D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FBE84BD2605AD5A00D54E92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FDA2D542606690700E8E0D5;
+			remoteInfo = HappyTherapistWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7FDA2D752606690C00E8E0D5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7FDA2D742606690C00E8E0D5 /* HappyTherapistWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FDA2D782606690C00E8E0D5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7FDA2D622606690B00E8E0D5 /* HappyTherapistWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		20429B2A2042F9D33A51382E /* Pods-YouTubeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeSample.debug.xcconfig"; path = "Target Support Files/Pods-YouTubeSample/Pods-YouTubeSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +114,24 @@
 		7FBE84EC2605AD5B00D54E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FBE84FB2605AD8700D54E92 /* YoutubeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeListViewController.swift; sourceTree = "<group>"; };
 		7FBE85002605E74200D54E92 /* YoutubePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePlayerViewController.swift; sourceTree = "<group>"; };
+		7FDA2D552606690700E8E0D5 /* HappyTherapistWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyTherapistWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FDA2D582606690700E8E0D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7FDA2D5A2606690A00E8E0D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FDA2D5C2606690A00E8E0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FDA2D612606690B00E8E0D5 /* HappyTherapistWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HappyTherapistWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FDA2D662606690B00E8E0D5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7FDA2D682606690B00E8E0D5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7FDA2D6A2606690B00E8E0D5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7FDA2D6C2606690B00E8E0D5 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		7FDA2D6E2606690C00E8E0D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FDA2D702606690C00E8E0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FDA2D712606690C00E8E0D5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7FDA2D822606693A00E8E0D5 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
+		7FDA2D8926066A7700E8E0D5 /* HappyTherapist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HappyTherapist.entitlements; sourceTree = "<group>"; };
+		7FDA2D8A26066A7700E8E0D5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		7FDA2D9126066B2300E8E0D5 /* HappyTherapistWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HappyTherapistWatch Extension.entitlements"; sourceTree = "<group>"; };
+		7FDA2D9226066B2300E8E0D5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		7FDA2D9926066B7100E8E0D5 /* PhoneConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnector.swift; sourceTree = "<group>"; };
 		7FE79998260600E40036A32C /* HappyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyState.swift; sourceTree = "<group>"; };
 		93CEC224E0EEEC299EBFC2E5 /* Pods-YouTubeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeSample.release.xcconfig"; path = "Target Support Files/Pods-YouTubeSample/Pods-YouTubeSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				767AAE3AAF9E29A4CA02DB32 /* libPods-YouTubeSample.a in Frameworks */,
+				7FDA2D8B26066A7700E8E0D5 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +157,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FDA2D5E2606690B00E8E0D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FDA2D9326066B2300E8E0D5 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +186,8 @@
 				7FBE84C72605AD5A00D54E92 /* HappyTherapist */,
 				7FBE84DE2605AD5B00D54E92 /* HappyTherapistTests */,
 				7FBE84E92605AD5B00D54E92 /* HappyTherapistUITests */,
+				7FDA2D562606690700E8E0D5 /* HappyTherapistWatch */,
+				7FDA2D652606690B00E8E0D5 /* HappyTherapistWatch Extension */,
 				7FBE84C62605AD5A00D54E92 /* Products */,
 				2EE8A26D27E5C4E1504F0FE7 /* Pods */,
 				DFA180746E9C0084A4884CC5 /* Frameworks */,
@@ -119,6 +200,8 @@
 				7FBE84C52605AD5A00D54E92 /* HappyTherapist.app */,
 				7FBE84DB2605AD5B00D54E92 /* HappyTherapistTests.xctest */,
 				7FBE84E62605AD5B00D54E92 /* HappyTherapistUITests.xctest */,
+				7FDA2D552606690700E8E0D5 /* HappyTherapistWatch.app */,
+				7FDA2D612606690B00E8E0D5 /* HappyTherapistWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +209,7 @@
 		7FBE84C72605AD5A00D54E92 /* HappyTherapist */ = {
 			isa = PBXGroup;
 			children = (
+				7FDA2D8926066A7700E8E0D5 /* HappyTherapist.entitlements */,
 				7FBE84C82605AD5A00D54E92 /* AppDelegate.swift */,
 				7FBE84CA2605AD5A00D54E92 /* SceneDelegate.swift */,
 				7FBE84CE2605AD5A00D54E92 /* Main.storyboard */,
@@ -139,6 +223,7 @@
 				7F1B392526063872009D37E3 /* YoutubeWindowViewController.swift */,
 				7FE79998260600E40036A32C /* HappyState.swift */,
 				7F2DCEE42605F5600040407A /* BridgeHeader.h */,
+				7FDA2D822606693A00E8E0D5 /* WatchConnector.swift */,
 			);
 			path = HappyTherapist;
 			sourceTree = "<group>";
@@ -161,9 +246,37 @@
 			path = HappyTherapistUITests;
 			sourceTree = "<group>";
 		};
+		7FDA2D562606690700E8E0D5 /* HappyTherapistWatch */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA2D572606690700E8E0D5 /* Interface.storyboard */,
+				7FDA2D5A2606690A00E8E0D5 /* Assets.xcassets */,
+				7FDA2D5C2606690A00E8E0D5 /* Info.plist */,
+			);
+			path = HappyTherapistWatch;
+			sourceTree = "<group>";
+		};
+		7FDA2D652606690B00E8E0D5 /* HappyTherapistWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA2D9126066B2300E8E0D5 /* HappyTherapistWatch Extension.entitlements */,
+				7FDA2D662606690B00E8E0D5 /* InterfaceController.swift */,
+				7FDA2D682606690B00E8E0D5 /* ExtensionDelegate.swift */,
+				7FDA2D6A2606690B00E8E0D5 /* NotificationController.swift */,
+				7FDA2D6C2606690B00E8E0D5 /* ComplicationController.swift */,
+				7FDA2D6E2606690C00E8E0D5 /* Assets.xcassets */,
+				7FDA2D702606690C00E8E0D5 /* Info.plist */,
+				7FDA2D712606690C00E8E0D5 /* PushNotificationPayload.apns */,
+				7FDA2D9926066B7100E8E0D5 /* PhoneConnector.swift */,
+			);
+			path = "HappyTherapistWatch Extension";
+			sourceTree = "<group>";
+		};
 		DFA180746E9C0084A4884CC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7FDA2D9226066B2300E8E0D5 /* HealthKit.framework */,
+				7FDA2D8A26066A7700E8E0D5 /* HealthKit.framework */,
 				41C0A9EBE7559AC44A845423 /* libPods-YouTubeSample.a */,
 			);
 			name = Frameworks;
@@ -181,10 +294,12 @@
 				7FBE84C22605AD5A00D54E92 /* Frameworks */,
 				7FBE84C32605AD5A00D54E92 /* Resources */,
 				571E37F2CAAC0975D3A2C54D /* [CP] Copy Pods Resources */,
+				7FDA2D752606690C00E8E0D5 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7FDA2D732606690C00E8E0D5 /* PBXTargetDependency */,
 			);
 			name = HappyTherapist;
 			productName = YouTubeSample;
@@ -227,6 +342,40 @@
 			productReference = 7FBE84E62605AD5B00D54E92 /* HappyTherapistUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7FDA2D542606690700E8E0D5 /* HappyTherapistWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FDA2D7C2606690C00E8E0D5 /* Build configuration list for PBXNativeTarget "HappyTherapistWatch" */;
+			buildPhases = (
+				7FDA2D532606690700E8E0D5 /* Resources */,
+				7FDA2D782606690C00E8E0D5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FDA2D642606690B00E8E0D5 /* PBXTargetDependency */,
+			);
+			name = HappyTherapistWatch;
+			productName = HappyTherapistWatch;
+			productReference = 7FDA2D552606690700E8E0D5 /* HappyTherapistWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7FDA2D602606690B00E8E0D5 /* HappyTherapistWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FDA2D7B2606690C00E8E0D5 /* Build configuration list for PBXNativeTarget "HappyTherapistWatch Extension" */;
+			buildPhases = (
+				7FDA2D5D2606690B00E8E0D5 /* Sources */,
+				7FDA2D5E2606690B00E8E0D5 /* Frameworks */,
+				7FDA2D5F2606690B00E8E0D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HappyTherapistWatch Extension";
+			productName = "HappyTherapistWatch Extension";
+			productReference = 7FDA2D612606690B00E8E0D5 /* HappyTherapistWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,6 +396,12 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 7FBE84C42605AD5A00D54E92;
 					};
+					7FDA2D542606690700E8E0D5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7FDA2D602606690B00E8E0D5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = 7FBE84C02605AD5A00D54E92 /* Build configuration list for PBXProject "HappyTherapist" */;
@@ -265,6 +420,8 @@
 				7FBE84C42605AD5A00D54E92 /* HappyTherapist */,
 				7FBE84DA2605AD5B00D54E92 /* HappyTherapistTests */,
 				7FBE84E52605AD5B00D54E92 /* HappyTherapistUITests */,
+				7FDA2D542606690700E8E0D5 /* HappyTherapistWatch */,
+				7FDA2D602606690B00E8E0D5 /* HappyTherapistWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -291,6 +448,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FDA2D532606690700E8E0D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FDA2D5B2606690A00E8E0D5 /* Assets.xcassets in Resources */,
+				7FDA2D592606690700E8E0D5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FDA2D5F2606690B00E8E0D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FDA2D6F2606690C00E8E0D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F1B392626063872009D37E3 /* YoutubeWindowViewController.swift in Sources */,
+				7FDA2D832606693A00E8E0D5 /* WatchConnector.swift in Sources */,
 				7FBE85012605E74200D54E92 /* YoutubePlayerViewController.swift in Sources */,
 				7F1B391426061ECD009D37E3 /* YoutubeMyListViewController.swift in Sources */,
 				7F1B391926063523009D37E3 /* HomeViewController.swift in Sources */,
@@ -370,6 +545,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FDA2D5D2606690B00E8E0D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FDA2D6B2606690B00E8E0D5 /* NotificationController.swift in Sources */,
+				7FDA2D9A26066B7100E8E0D5 /* PhoneConnector.swift in Sources */,
+				7FDA2D6D2606690B00E8E0D5 /* ComplicationController.swift in Sources */,
+				7FDA2D692606690B00E8E0D5 /* ExtensionDelegate.swift in Sources */,
+				7FDA2D672606690B00E8E0D5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -382,6 +569,16 @@
 			isa = PBXTargetDependency;
 			target = 7FBE84C42605AD5A00D54E92 /* HappyTherapist */;
 			targetProxy = 7FBE84E72605AD5B00D54E92 /* PBXContainerItemProxy */;
+		};
+		7FDA2D642606690B00E8E0D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FDA2D602606690B00E8E0D5 /* HappyTherapistWatch Extension */;
+			targetProxy = 7FDA2D632606690B00E8E0D5 /* PBXContainerItemProxy */;
+		};
+		7FDA2D732606690C00E8E0D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FDA2D542606690700E8E0D5 /* HappyTherapistWatch */;
+			targetProxy = 7FDA2D722606690C00E8E0D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -400,6 +597,14 @@
 				7FBE84D42605AD5B00D54E92 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7FDA2D572606690700E8E0D5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FDA2D582606690700E8E0D5 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -527,6 +732,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HappyTherapist/HappyTherapist.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U435EYR422;
 				INFOPLIST_FILE = HappyTherapist/Info.plist;
@@ -548,6 +754,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HappyTherapist/HappyTherapist.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U435EYR422;
 				INFOPLIST_FILE = HappyTherapist/Info.plist;
@@ -648,6 +855,92 @@
 			};
 			name = Release;
 		};
+		7FDA2D762606690C00E8E0D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U435EYR422;
+				IBSC_MODULE = HappyTherapistWatch_Extension;
+				INFOPLIST_FILE = HappyTherapistWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = AppAcademia.HappyTherapist.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		7FDA2D772606690C00E8E0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U435EYR422;
+				IBSC_MODULE = HappyTherapistWatch_Extension;
+				INFOPLIST_FILE = HappyTherapistWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = AppAcademia.HappyTherapist.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		7FDA2D792606690C00E8E0D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HappyTherapistWatch Extension/HappyTherapistWatch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U435EYR422;
+				INFOPLIST_FILE = "HappyTherapistWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AppAcademia.HappyTherapist.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		7FDA2D7A2606690C00E8E0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HappyTherapistWatch Extension/HappyTherapistWatch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U435EYR422;
+				INFOPLIST_FILE = "HappyTherapistWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AppAcademia.HappyTherapist.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -683,6 +976,24 @@
 			buildConfigurations = (
 				7FBE84F62605AD5B00D54E92 /* Debug */,
 				7FBE84F72605AD5B00D54E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FDA2D7B2606690C00E8E0D5 /* Build configuration list for PBXNativeTarget "HappyTherapistWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FDA2D792606690C00E8E0D5 /* Debug */,
+				7FDA2D7A2606690C00E8E0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FDA2D7C2606690C00E8E0D5 /* Build configuration list for PBXNativeTarget "HappyTherapistWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FDA2D762606690C00E8E0D5 /* Debug */,
+				7FDA2D772606690C00E8E0D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

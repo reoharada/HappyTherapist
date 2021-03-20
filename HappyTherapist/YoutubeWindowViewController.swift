@@ -21,11 +21,20 @@ class YoutubeWindowViewController: UIViewController, WKYTPlayerViewDelegate {
     func showWindow() {
         if let windowScene =  UIApplication.shared.connectedScenes.first as? UIWindowScene {
             playerWindow = UIWindow(windowScene: windowScene)
+            playerWindow.bounds = CGRect(x: UIScreen.main.bounds.size.width/2, y: UIScreen.main.bounds.size.height/2, width: 10, height: 10)
             playerWindow.backgroundColor = .clear
             playerWindow.rootViewController = self
             playerWindow.windowLevel = UIWindow.Level.statusBar + 1
             playerWindow.makeKeyAndVisible()
-            startVideo()
+            self.playerWindow.bounds = CGRect(x: 0, y: 0, width: 100, height: 100)
+            UIView.animate(withDuration: 1.0) {
+                print(UIScreen.main.bounds)
+                //self.playerWindow.bounds = UIScreen.main.bounds
+                
+            } completion: { (animated) in
+                print(self.playerWindow.bounds)
+                self.startVideo()
+            }
         }
     }
     

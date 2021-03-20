@@ -20,7 +20,6 @@ express()
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 function therapistAttack(req) {
-  //  let userId = 'Ud6e97f08e338acefe029dcf9f91b1f24';
     let userId = req.body.userId;
     let therapyText = req.body.message;
     const message = {

@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     let userDefault = UserDefaults.standard
     var youtubeWindowViewController: YoutubeWindowViewController!
     let lineUrl = "https://happy-line-hackday2021.herokuapp.com/linepush"
+    let lineUserId = "U069f373b357c50b53247160bbff8bb27"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,23 +46,17 @@ class HomeViewController: UIViewController {
     }
     
     func postLineMessage(_ message: String) {
-        //guard let url = URL(string: lineUrl) else { return }
         guard var urlComponet = URLComponents(string: lineUrl) else { return }
-//        let queryItems = [
-//            "message": message,
-//        ]
         let queryItems = [
-            URLQueryItem(name: "message", value: message)
+            URLQueryItem(name: "message", value: message),
+            URLQueryItem(name: "userId", value: lineUserId)
         ]
         urlComponet.queryItems = queryItems
-//        guard let queryJson = try? JSONSerialization.data(withJSONObject: queryItems, options: .fragmentsAllowed) else { return }
         guard let url = urlComponet.url else { return }
         var request = URLRequest(url: url)
-        //request.httpBody = queryJson
         request.httpBody = urlComponet.query?.data(using: .utf8)
         request.httpMethod = "POST"
         request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-//        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             print(data)
             print(response)

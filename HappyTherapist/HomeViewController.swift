@@ -11,6 +11,8 @@ struct ParseError: Error {}
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var debugAreaView: UIView!
+    
     let userDefault = UserDefaults.standard
     var youtubeWindowViewController: YoutubeWindowViewController!
     let lineUrl = "https://happy-line-hackday2021.herokuapp.com/linepush"
@@ -41,6 +43,8 @@ class HomeViewController: UIViewController {
         userData = userDefaults.array(forKey: self.userDataKey) as? [String] ?? []
         print("Get userData: \(userData)")
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(HomeViewController.timerUpdate), userInfo: nil, repeats: true)
+        MessageLabel.blinking()
+        StatusLabel.blinking()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -71,10 +75,16 @@ class HomeViewController: UIViewController {
                 self.StatusLabel.text = "STATUS : 正常"
             case 2:
                 self.StatusLabel.text = "STATUS : 緊急 (過呼吸)"
+                showPalyer(HappyState.emergency.key())
+                postLineMessage(HappyState.emergency.message())
             case 3:
                 self.StatusLabel.text = "STATUS : 緊急 (低心拍)"
+                showPalyer(HappyState.die.key())
+                postLineMessage(HappyState.die.message())
             case 4:
                 self.StatusLabel.text = "STATUS : 興奮"
+                showPalyer(HappyState.highTension.key())
+                postLineMessage(HappyState.highTension.message())
             default:
                 self.StatusLabel.text = "STATUS : 未検知"
             }
@@ -230,17 +240,17 @@ class HomeViewController: UIViewController {
     
     @IBAction func 集中力が高まってるよ(_ sender: Any) {
         showPalyer(HappyState.highTension.key())
-        postLineMessage(HappyState.highTension.string())
+        postLineMessage(HappyState.highTension.message())
     }
     
     @IBAction func ハッピーフィナーレくるぅ(_ sender: Any) {
         showPalyer(HappyState.die.key())
-        postLineMessage(HappyState.die.string())
+        postLineMessage(HappyState.die.message())
     }
     
     @IBAction func 緊急事態発生中(_ sender: Any) {
         showPalyer(HappyState.emergency.key())
-        postLineMessage(HappyState.emergency.string())
+        postLineMessage(HappyState.emergency.message())
     }
     
     func showPalyer(_ key: String) {
@@ -273,6 +283,11 @@ class HomeViewController: UIViewController {
             print(error)
         }
         task.resume()
+    }
+    
+    @IBAction func tapDebugButton(_ sender: UIButton) {
+        sender.isHidden = true
+        debugAreaView.isHidden = false
     }
     
 }

@@ -10,6 +10,8 @@ import UIKit
 class YoutubeMyListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var listTableView: UITableView!
+    var youtubeWindowViewController: YoutubeWindowViewController!
+    let userDefault = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,10 +66,22 @@ class YoutubeMyListViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let key = HappyState.allCases[indexPath.section].key()
-            let userDefault = UserDefaults.standard
             userDefault.removeObject(forKey: key)
             userDefault.synchronize()
             tableView.reloadData()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let key = HappyState.allCases[indexPath.section].key()
+        if let savedData = userDefault.object(forKey: key) as? [String] {
+            if savedData.count == 3 {
+                let videoId = savedData[0]
+                let vc = storyboard?.instantiateViewController(identifier: "YoutubeWindowViewController") as! YoutubeWindowViewController
+                youtubeWindowViewController = vc
+                youtubeWindowViewController.videoId = videoId
+                youtubeWindowViewController.showWindow()
+            }
         }
     }
     /***** UITableView ******/

@@ -30,7 +30,7 @@ class YoutubeWindowViewController: UIViewController, WKYTPlayerViewDelegate {
     }
     
     func startVideo() {
-        playerView.load(withVideoId: videoId, playerVars: ["playsinline": 1])
+        playerView.load(withVideoId: videoId, playerVars: ["playsinline": 1, "controls": 0])
     }
     
     func playerViewDidBecomeReady(_ playerView: WKYTPlayerView) {
@@ -41,7 +41,7 @@ class YoutubeWindowViewController: UIViewController, WKYTPlayerViewDelegate {
         // 無限ループさせる
         if state == WKYTPlayerState.ended { playerView.playVideo() }
     }
-    
+
     @IBAction func tapCloseButton(_ sender: Any) {
         playerView.stopVideo()
         playerWindow = nil

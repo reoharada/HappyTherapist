@@ -15,7 +15,18 @@ enum HappyState: CaseIterable {
         case .die:
             return "ハッピーフィナーレのとき"
         case .emergency:
-            return "緊急時"
+            return "緊急 (過呼吸)のとき"
+        }
+    }
+    
+    func message() -> String {
+        switch self {
+        case .highTension:
+            return "集中力が高まっております"
+        case .die:
+            return "命が危険な状態です"
+        case .emergency:
+            return "緊急 (過呼吸)の状態です"
         }
     }
     

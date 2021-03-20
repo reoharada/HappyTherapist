@@ -7,6 +7,10 @@
 
 import UIKit
 
-class Extension: NSObject {
-
+extension UILabel {
+    func blinking() {
+        Timer.scheduledTimer(withTimeInterval: 0.6, repeats: true) { (ti) in
+            self.isHidden = !self.isHidden
+        }
+    }
 }

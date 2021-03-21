@@ -37,8 +37,20 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var MessageLabel: UILabel!
     @IBOutlet weak var StatusLabel: UILabel!
 
+    func setTabBar() {
+        let images = [
+            UIImage(named: "home"),
+            UIImage(named: "music")
+        ]
+        tabBarController?.tabBar.items?.enumerated().forEach {
+            $1.image = images[$0]?.withRenderingMode(.alwaysTemplate)
+            $1.selectedImage = images[$0]
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setTabBar()
         // 心拍数の時系列データを取得
         userData = userDefaults.array(forKey: self.userDataKey) as? [String] ?? []
         print("Get userData: \(userData)")

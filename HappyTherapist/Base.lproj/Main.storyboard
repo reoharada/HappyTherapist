@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="76q-VZ-bof">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,32 +13,20 @@
             <objects>
                 <viewController id="o5n-Sh-QS8" customClass="HomeViewController" customModule="HappyTherapist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="een-GT-J0s">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Happy Therapist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mop-UJ-kPZ">
-                                <rect key="frame" x="28" y="385" width="358.5" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="7mO-cn-nAa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATUS : Undetected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbu-s7-AcK">
-                                <rect key="frame" x="47" y="465" width="320" height="47"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="DoA-nZ-Giz"/>
-                                </constraints>
+                                <rect key="frame" x="8" y="385" width="374" height="22"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IwT-kD-J4m">
-                                <rect key="frame" x="41.5" y="670.5" width="331" height="134.5"/>
+                                <rect key="frame" x="39" y="542" width="312" height="211"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnt-MH-yTf">
-                                        <rect key="frame" x="77.5" y="9.5" width="176" height="28"/>
+                                        <rect key="frame" x="68" y="47.666666666666629" width="176" height="28"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="16"/>
                                         <state key="normal" title="集中力が高まってるよ！">
                                             <color key="titleColor" red="0.92136627439999996" green="0.27711424229999998" blue="0.1489161551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -48,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QA2-fD-6jl">
-                                        <rect key="frame" x="63" y="53.5" width="205" height="28"/>
+                                        <rect key="frame" x="53.666666666666686" y="91.666666666666629" width="205" height="28"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="16"/>
                                         <state key="normal" title="ハッピーフィナーレくるぅ〜">
                                             <color key="titleColor" red="0.92136627439999996" green="0.27711424229999998" blue="0.1489161551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -58,7 +46,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQL-fW-TnS">
-                                        <rect key="frame" x="109.5" y="97.5" width="112" height="28"/>
+                                        <rect key="frame" x="100" y="135.66666666666663" width="112" height="28"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="16"/>
                                         <state key="normal" title="緊急事態発生中">
                                             <color key="titleColor" red="0.92136627439999996" green="0.27711424229999998" blue="0.1489161551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -79,7 +67,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQf-Tb-oRY">
-                                <rect key="frame" x="340" y="791" width="66" height="22"/>
+                                <rect key="frame" x="316" y="739" width="66" height="22"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="10"/>
                                 <state key="normal" title="debugモード">
                                     <color key="titleColor" red="0.92136627439999996" green="0.27711424229999998" blue="0.1489161551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -88,22 +76,31 @@
                                     <action selector="tapDebugButton:" destination="o5n-Sh-QS8" eventType="touchUpInside" id="LG2-d4-RRs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Happy Therapist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mop-UJ-kPZ">
+                                <rect key="frame" x="8" y="347" width="374" height="22"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L2T-Np-nNI"/>
                         <color key="backgroundColor" red="0.52156862749999999" green="0.81568627449999997" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Mop-UJ-kPZ" firstAttribute="top" secondItem="L2T-Np-nNI" secondAttribute="top" constant="297" id="0LR-Qe-FDZ"/>
-                            <constraint firstItem="lbu-s7-AcK" firstAttribute="centerX" secondItem="Mop-UJ-kPZ" secondAttribute="centerX" id="0wc-RA-WDv"/>
-                            <constraint firstItem="lbu-s7-AcK" firstAttribute="leading" secondItem="L2T-Np-nNI" secondAttribute="leading" constant="47" id="7BS-ig-EzI"/>
+                            <constraint firstItem="L2T-Np-nNI" firstAttribute="trailing" secondItem="lbu-s7-AcK" secondAttribute="trailing" constant="8" id="16j-VW-zop"/>
                             <constraint firstItem="L2T-Np-nNI" firstAttribute="trailing" secondItem="oQf-Tb-oRY" secondAttribute="trailing" constant="8" id="Bon-NZ-NuY"/>
+                            <constraint firstItem="lbu-s7-AcK" firstAttribute="leading" secondItem="L2T-Np-nNI" secondAttribute="leading" constant="8" id="CRF-YC-8qw"/>
+                            <constraint firstItem="Mop-UJ-kPZ" firstAttribute="leading" secondItem="een-GT-J0s" secondAttribute="leading" constant="8" id="DI6-lw-L26"/>
+                            <constraint firstItem="lbu-s7-AcK" firstAttribute="centerX" secondItem="een-GT-J0s" secondAttribute="centerX" id="O9D-ip-tY2"/>
                             <constraint firstItem="oQf-Tb-oRY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="L2T-Np-nNI" secondAttribute="leading" symbolic="YES" id="P3C-8S-66E"/>
-                            <constraint firstItem="Mop-UJ-kPZ" firstAttribute="centerX" secondItem="IwT-kD-J4m" secondAttribute="centerX" id="Yic-19-W8y"/>
-                            <constraint firstItem="IwT-kD-J4m" firstAttribute="height" secondItem="een-GT-J0s" secondAttribute="height" multiplier="0.15" id="ecP-k3-vWX"/>
+                            <constraint firstItem="Mop-UJ-kPZ" firstAttribute="centerX" secondItem="een-GT-J0s" secondAttribute="centerX" id="cYg-Zc-O7c"/>
+                            <constraint firstItem="IwT-kD-J4m" firstAttribute="height" secondItem="een-GT-J0s" secondAttribute="height" multiplier="0.25" id="ecP-k3-vWX"/>
                             <constraint firstItem="IwT-kD-J4m" firstAttribute="centerX" secondItem="een-GT-J0s" secondAttribute="centerX" id="elH-s8-hd0"/>
+                            <constraint firstItem="lbu-s7-AcK" firstAttribute="top" secondItem="Mop-UJ-kPZ" secondAttribute="bottom" constant="16" id="otC-2l-LfD"/>
                             <constraint firstItem="oQf-Tb-oRY" firstAttribute="bottom" secondItem="L2T-Np-nNI" secondAttribute="bottom" id="q4N-uq-0jO"/>
-                            <constraint firstItem="lbu-s7-AcK" firstAttribute="top" secondItem="Mop-UJ-kPZ" secondAttribute="bottom" constant="29" id="sds-CH-20q"/>
+                            <constraint firstItem="Mop-UJ-kPZ" firstAttribute="centerY" secondItem="een-GT-J0s" secondAttribute="centerY" constant="-64" id="qI2-UF-5hT"/>
                             <constraint firstItem="IwT-kD-J4m" firstAttribute="width" secondItem="een-GT-J0s" secondAttribute="width" multiplier="0.8" id="ww2-Z1-TdR"/>
                             <constraint firstItem="L2T-Np-nNI" firstAttribute="bottom" secondItem="IwT-kD-J4m" secondAttribute="bottom" constant="8" id="xAT-S6-8bU"/>
+                            <constraint firstAttribute="trailing" secondItem="Mop-UJ-kPZ" secondAttribute="trailing" constant="8" id="y8e-tW-gBC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3Nz-Hp-eDp"/>
@@ -115,23 +112,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRt-jk-f8a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1486.9565217391305" y="838.39285714285711"/>
+            <point key="canvasLocation" x="1486.875" y="837.67605633802816"/>
         </scene>
         <!--Youtube List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="YoutubeListViewController" customModule="HappyTherapist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="キーワードを入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tzv-D1-PDz">
-                                <rect key="frame" x="16" y="104" width="310.5" height="34"/>
+                                <rect key="frame" x="16" y="104" width="292.66666666666669" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uiu-IZ-Wx8">
-                                <rect key="frame" x="334.5" y="104" width="71.5" height="32"/>
+                                <rect key="frame" x="316.66666666666669" y="104" width="65.333333333333314" height="32"/>
                                 <color key="backgroundColor" red="0.92136627439999996" green="0.27711424229999998" blue="0.1489161551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
                                 <state key="normal" title="検索">
@@ -147,21 +144,21 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RSL-Ly-Bu8">
-                                <rect key="frame" x="8" y="146" width="398" height="659"/>
+                                <rect key="frame" x="8" y="146" width="374" height="607"/>
                                 <color key="backgroundColor" red="0.52156862749999999" green="0.81568627449999997" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="197" id="mwn-OV-OvB" customClass="YouTubeSearchListTableViewCell" customModule="HappyTherapist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="398" height="197"/>
+                                        <rect key="frame" x="0.0" y="28" width="374" height="197"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mwn-OV-OvB" id="Ard-Nw-Imf">
-                                            <rect key="frame" x="0.0" y="0.0" width="398" height="197"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="197"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6vH-a0-ujO">
-                                                    <rect key="frame" x="8" y="8" width="382" height="138"/>
+                                                    <rect key="frame" x="8" y="8" width="358" height="138"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKy-fx-7Hb">
-                                                    <rect key="frame" x="8" y="154" width="382" height="35"/>
+                                                    <rect key="frame" x="8" y="154" width="358" height="35"/>
                                                     <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -221,15 +218,22 @@
             <objects>
                 <viewController storyboardIdentifier="YoutubePlayerViewController" id="l74-Wn-yYM" customClass="YoutubePlayerViewController" customModule="HappyTherapist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N56-jA-Rp7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mk4-5J-Kfe" customClass="WKYTPlayerView">
-                                <rect key="frame" x="8" y="52" width="398" height="358.5"/>
+                                <rect key="frame" x="8" y="52" width="374" height="337.66666666666669"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waH-2Z-diy">
+                                <rect key="frame" x="8" y="397.66666666666674" width="374" height="253"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="l74-Wn-yYM" id="r5L-yz-d3o"/>
+                                    <outlet property="delegate" destination="l74-Wn-yYM" id="vZy-ZI-Smz"/>
+                                </connections>
+                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ltq-Ku-i2O">
-                                <rect key="frame" x="103.5" y="695" width="207" height="39"/>
+                                <rect key="frame" x="97.666666666666686" y="658.66666666666663" width="195" height="37"/>
                                 <color key="backgroundColor" red="0.98857373000000004" green="0.28594183919999999" blue="0.1007037833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ltq-Ku-i2O" secondAttribute="height" multiplier="69:13" id="zyf-DD-Kal"/>
@@ -248,13 +252,6 @@
                                     <action selector="tapSaveButton:" destination="l74-Wn-yYM" eventType="touchUpInside" id="wUb-ao-8dM"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waH-2Z-diy">
-                                <rect key="frame" x="8" y="418.5" width="398" height="268.5"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="l74-Wn-yYM" id="r5L-yz-d3o"/>
-                                    <outlet property="delegate" destination="l74-Wn-yYM" id="vZy-ZI-Smz"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l0c-wW-JhS"/>
                         <color key="backgroundColor" red="0.52156862749999999" green="0.81568627449999997" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -288,7 +285,7 @@
                     <tabBarItem key="tabBarItem" title="ミュージック" id="NK1-Ej-evx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TJ8-oM-ikL">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.92136627439999996" green="0.27711424229999998" blue="0.1489161551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
@@ -306,26 +303,26 @@
             <objects>
                 <viewController id="W9u-dy-yg8" customClass="YoutubeMyListViewController" customModule="HappyTherapist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qag-E7-KaW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7vP-Ox-Kah">
-                                <rect key="frame" x="8" y="96" width="398" height="709"/>
+                                <rect key="frame" x="8" y="96" width="374" height="657"/>
                                 <color key="backgroundColor" red="0.52156862749999999" green="0.81568627449999997" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.52156862749999999" green="0.81568627449999997" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="197" id="knV-Td-9xZ" customClass="YouTubeSearchListTableViewCell" customModule="HappyTherapist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="398" height="197"/>
+                                        <rect key="frame" x="0.0" y="28" width="374" height="197"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="knV-Td-9xZ" id="pVd-xY-qHj">
-                                            <rect key="frame" x="0.0" y="0.0" width="398" height="197"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="197"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NTz-EJ-6md">
-                                                    <rect key="frame" x="8" y="8" width="382" height="138"/>
+                                                    <rect key="frame" x="8" y="8" width="358" height="138"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQq-G3-Qbt">
-                                                    <rect key="frame" x="8" y="154" width="382" height="35"/>
+                                                    <rect key="frame" x="8" y="154" width="358" height="35"/>
                                                     <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -349,10 +346,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="noneCell" id="Bge-wB-amk">
-                                        <rect key="frame" x="0.0" y="225" width="398" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="225" width="374" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bge-wB-amk" id="T2f-aP-wnf">
-                                            <rect key="frame" x="0.0" y="0.0" width="398" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.52156862749999999" green="0.81568627449999997" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
@@ -417,7 +414,7 @@
                     <tabBarItem key="tabBarItem" title="ホーム" id="dfO-Pk-Vx6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="urE-gV-4Ka">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.92136627439999996" green="0.27711424229999998" blue="0.1489161551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
@@ -435,11 +432,11 @@
             <objects>
                 <viewController id="bsO-al-xeH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PSU-G2-ekF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LINEの設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wN-zH-CLz">
-                                <rect key="frame" x="163" y="437.5" width="88" height="21"/>
+                                <rect key="frame" x="151" y="411.66666666666669" width="88" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -465,7 +462,7 @@
                     <tabBarItem key="tabBarItem" title="LINEメッセージ" id="OSN-zb-Dij"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1i2-uz-lbr">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -482,16 +479,16 @@
             <objects>
                 <viewController storyboardIdentifier="YoutubeWindowViewController" id="Vdq-0O-OVq" customClass="YoutubeWindowViewController" customModule="HappyTherapist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QWg-KR-caj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYM-zv-TB2">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30348114619981376" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVI-12-t42">
-                                <rect key="frame" x="20.5" y="611" width="373" height="54"/>
+                                <rect key="frame" x="19.666666666666657" y="574.66666666666663" width="351" height="50.666666666666629"/>
                                 <color key="backgroundColor" red="0.92136627439999996" green="0.27711424229999998" blue="0.1489161551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="17"/>
                                 <state key="normal" title="閉じる">
@@ -502,7 +499,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQ9-re-rux" customClass="WKYTPlayerView">
-                                <rect key="frame" x="20.5" y="237" width="373" height="358"/>
+                                <rect key="frame" x="19.666666666666657" y="221.33333333333334" width="351" height="337.33333333333326"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>

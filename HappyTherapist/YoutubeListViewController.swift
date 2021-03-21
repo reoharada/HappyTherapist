@@ -14,10 +14,10 @@ class YoutubeListViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var listTableView: UITableView!
     
     let refreshAccessTokenURL = "https://accounts.google.com/o/oauth2/token"
-    let refreshToken = "1//0eATxFlGlSh6xCgYIARAAGA4SNwF-L9IrI7YXQQCaIbVzcusi71kt7b3qjunLUj52T2YZP6isQp4-35FAu3f6RJ_x3SfhYarc0sw"
+    let refreshToken = "1//0emEF7vqshkuSCgYIARAAGA4SNwF-L9Irp8hGV5pUhiiu2rU3JYLBopAeP5_rRRRWVemVxixvnuYkV1udQs0qdJ9PSQ_kNEFMrhM"
     var accessToken = ""
-    let googleAPIClientId = "1012501657650-94joaqg84trm7hj18bcfludrg54h1tr1.apps.googleusercontent.com"
-    let googleAPIClientSecret = "PZwK9yYvDKk5-Dsb_Qvkliez"
+    let googleAPIClientId = "986368380219-h3rt8gpkn1j3ldk5b9fdks3mfguakjj4.apps.googleusercontent.com"
+    let googleAPIClientSecret = "5IgO9jFALLpvgaN1xrmV6uHP"
     let refreshTokenGrantType = "refresh_token"
     
     let youTubeSearchListURL = "https://www.googleapis.com/youtube/v3/search"
